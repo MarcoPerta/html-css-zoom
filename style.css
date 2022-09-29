@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+.flex{
+    display: flex;
+}
+
+.nln-blck{
+    display: inline-block;
+}
+
+/* Creazione layout in tre macroaree */
+.container{
+    height: 100vh;
+    background-color: lightcoral;
+    flex-direction: column;
+}
+
+header, footer {
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 2;
+}
+/* fine layout */
+
+/* cerazione header */
+header {
+    justify-content: flex-end;
+}
+
+.fa-grip, .fa-maximize {
+  font-size: 1.125rem;
+  vertical-align: middle;
+}
+
+.speaker, .arrows{
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    padding: 5px;
+    margin: 0px 5px;
+    border-radius: 8%;
+}
+/* fine header */
