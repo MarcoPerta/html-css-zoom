@@ -28,12 +28,13 @@ footer {
 }
 
 header {
-    height: 10%;
+    height: 5%;
 }
 
 main {
-    height: 80%;
+    height: 85%;
     flex-wrap: wrap;
+    padding: 20px 20px;
 }
 /* fine layout */
 
@@ -43,11 +44,11 @@ header {
 }
 
 .fa-grip, .fa-maximize, .fa-microphone-slash {
-  font-size: 1.125rem;
-  vertical-align: middle;
+  font-size: 10px;
 }
 
 .speaker, .arrows{
+    font-size: 0.625rem;
     color: white;
     background-color: gray;
     display: inline-block;
@@ -91,17 +92,21 @@ footer{
     margin: 15px 5px;
 }
 
-.fa-microphone, .fa-video, .center > div > i {
-    font-size: 20px;
+.fa-microphone, .fa-video, .center > div > i,p {
+    font-size: 0.938rem;
 }
 
 .fa-caret-up{
-    font-size: 10px;
-    vertical-align: middle;
+    color: white;
+    font-size: 0.625rem;
+    vertical-align: 8px;
 }
 
 .right{
     background-color: lightgray;
     color: red;
-    text-align: center;
+}
+
+.right > p {
+    padding: 25px 25px;
 }
