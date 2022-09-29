@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
 }
 
 .flex{
@@ -13,19 +12,28 @@
     display: inline-block;
 }
 
+.rltv{
+    position: relative;
+}
+
 /* Creazione layout in tre macroaree */
 .container{
     height: 100vh;
-    background-color: lightcoral;
+    background-color: black;
     flex-direction: column;
 }
 
-header, footer {
-    flex-grow: 1;
+footer {
+    height: 10%;
+}
+
+header {
+    height: 10%;
 }
 
 main {
-    flex-grow: 2;
+    height: 80%;
+    flex-wrap: wrap;
 }
 /* fine layout */
 
@@ -34,7 +42,7 @@ header {
     justify-content: flex-end;
 }
 
-.fa-grip, .fa-maximize {
+.fa-grip, .fa-maximize, .fa-microphone-slash {
   font-size: 1.125rem;
   vertical-align: middle;
 }
@@ -48,3 +56,52 @@ header {
     border-radius: 8%;
 }
 /* fine header */
+
+/* inizio main */
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.Name{
+    color: white;
+    background-color:rgba(192,192,192,0.3);
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card {
+    width: calc(100% / 7);
+    padding: 5px;
+    height: calc(100% / 5);
+}
+/* fine main */
+/* inizio footer */
+
+footer{
+    background-color: #3F5874;
+    justify-content: space-between;
+}
+
+.mic,.video, .center > div {
+    color: white;
+    text-align: center;
+    margin: 15px 5px;
+}
+
+.fa-microphone, .fa-video, .center > div > i {
+    font-size: 20px;
+}
+
+.fa-caret-up{
+    font-size: 10px;
+    vertical-align: middle;
+}
+
+.right{
+    background-color: lightgray;
+    color: red;
+    text-align: center;
+}
